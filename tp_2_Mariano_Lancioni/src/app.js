@@ -3,7 +3,7 @@ import css from './app.module.css';
 import Counter from './counter/counter';
 import Error from './error/error';
 import Loading from './loading/loading';
-
+import Sidebar from './sidebar/sidebar';
 
 
 class App extends React.Component {
@@ -36,16 +36,18 @@ class App extends React.Component {
     return (
       <div className={css.app}>
         <header className={css.header}>
-            Trabajo Práctico Nº 1
+            Trabajo Práctico Nº 2
         </header>
         <div className={css.container}>
           <section className={css.addSection}>  
             <span className={css.tituloAlumno}>Alumno:</span>
-            <span className={css.nombre}>Mariano Lancioni</span>
+            
+            <Sidebar />
             <button className={css.buttonAdd} onClick={this.addCounter}>Agregar Contador</button>
           </section>
           <section className={css.listSection}>    
           <span className={css.listTitle}>Lista de Contadores:</span>
+          
           {this.state.error && <Error message={this.state.error}/>}
             {this.state.loading
               ? <Loading />
