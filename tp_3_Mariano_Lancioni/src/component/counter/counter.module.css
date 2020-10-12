@@ -1,0 +1,37 @@
+.container {
+    width: 400px;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.info {
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.counter {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button {
+    margin: 0 5px;
+    outline: none;
+    height: 40px;
+    min-width: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #78ac26;
+    color: #78ac26;
+    cursor: pointer;
+    background-color: white;
+}
+
+.value {
+    font-size: 18px;
+    font-weight: bold;
+}
